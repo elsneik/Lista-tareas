@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+Custom
+*/
+:root{
+    /* colores del fondo*/
+    --bg-body: #1e1f22;
+    --bg-container:#22272b;
+    --border-container: #3a3b40;
+
+    /* fonts*/
+    --font-primary: 'Google Sans',Sans-serif;
+
+    /* espacios*/
+    --space1: 1rem;
+    --space2: .8rem;
+    --space3: .5rem;
+    /*Border*/
+    --border-radius:4px;
+    --border-size: 1px;
+    --border-container: #3a3b40;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    font-family: var(--font-primary);
+    padding: var(--space1);
+    background-color: var(--bg-body);
+}
+
+.contenedor{
+    padding: var(--space3);
+    background-color: var(--bg-container);
+    width: 100%;
+    max-width: fit-content;
+    height: fit-content;
+
+    padding: var(--space1);
+    border-radius: var(--border-size);
+    border-style: solid;
+    border-color: var(--border-container);
+
+    border-radius: var(--border-radius);
+    background-color: var(--bg-container);
+}
