@@ -1,59 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tareas</title>
-    <link rel="stylesheet" href="/style.css">
-    <!-- Vinculamos hoja de estilos-->
+    <title>Lista de Tareas ✅</title>
+
+    <!-- Vinculación de la hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vinculación de la hoja de JS -->
     <script src="./script.js" defer></script>
-    <!--Vinculamos el js-->
+      
+    <!-- Vincular Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet">
-    <!-- vinculamos la fuente-->
-    <!--Vinculamos los iconos-->
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+    <!-- Vincular Iconos Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!--fav icon-->
-<link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+
+    <!-- Vincular FavIcon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+
 </head>
 
 <body>
+
     <div class="contenedor">
-        <h1 class="titulo">✅Lista de tareas</h1>
-        <p class="mensaje">Escribe tu proxima tarea!</p>
-        <input type="text" class="tarea-entrada" placeholder="Estudiar para la clase de.." />
+        <h1 class="titulo">Lista de Tareas ✅</h1>
+
+        <p class="mensaje">Escribe tu próxima tarea c:</p>
+
+        <input
+            type="text"
+            class="tarea-entrada"
+            placeholder="Estudiar para la clase de..." />
+
         <div class="contenedor-botones">
-            <button class="boton-agregar">Crear tarea</button>
-            <button class="boton-ocultar">Ocultar Completadas</button>
-            <button class="boton-agregar">Eliminar Completadas</button>
+            <button class="boton boton-agregar">Crear Tarea</button>
+            <button class="boton boton-ocultar">Ocultar Completadas</button>
+            <button class="boton boton-eliminar">Eliminar Completadas</button>
         </div>
+
         <div class="contenedor-conteo">
             <p>Tareas totales: <span class="tareas-totales">0</span></p>
-            <p>Tareas terminadas: <span class="tareas-terminadas">0</span></p>
-        </div>
-        <div class="tarea">
-            <p class="tarea-texto">Tarea 1: Estudiar para el examen de Limón</p>
-            <div class="tarea-iconos">
-                <i class="bi bi-check-circle"></i>
-                <i class="bi bi-trash2"></i>
-            </div>
+            <p>Tareas terminadas: <span class="tareas-terminadas">0</span></p>  
         </div>
 
-        <div class="tarea tarea-completada">
-            <p class="tarea-texto">Tarea 2: Grabar secuencia de escena del cortometraje</p>
-            <div class="tarea-iconos">
-                <i class="bi bi-dash-circle"></i>
-                <i class="bi bi-trash2"></i>
+        <div class="contenedor-tareas">
+
+            <div class="tarea">
+                <p class="tarea-texto">Tarea 1: Estudiar para el examen de Limón</p>
+                <div class="tarea-iconos">
+                    <i class="bi bi-check-circle"></i>
+                    <i class="bi bi-trash2"></i>
+                </div>
             </div>
+            
+            <div class="tarea tarea-completada">
+                    <p class="tarea-texto">Tarea 2: Grabar secuencia de escena del cortometraje</p>
+                    <div class="tarea-iconos">
+                        <i class="bi bi-dash-circle"></i>  
+                        <i class="bi bi-trash2"></i>
+                    </div>
+            </div>
+
         </div>
 
     </div>
 
-    </div>
 </body>
 
 </html>
