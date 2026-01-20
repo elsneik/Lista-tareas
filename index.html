@@ -37,10 +37,11 @@
         <input
             type="text"
             class="tarea-entrada"
+            id="tareaEntrada"
             placeholder="Estudiar para la clase de..." />
 
         <div class="contenedor-botones">
-            <button class="boton boton-agregar">Crear Tarea</button>
+            <button class="boton boton-agregar" id="botonAgregar">Crear Tarea</button>
             <button class="boton boton-ocultar">Ocultar Completadas</button>
             <button class="boton boton-eliminar">Eliminar Completadas</button>
         </div>
@@ -50,7 +51,7 @@
             <p>Tareas terminadas: <span class="tareas-terminadas">0</span></p>  
         </div>
 
-        <div class="contenedor-tareas">
+        <div class="contenedor-tareas" id="contenedorTareas">
 
             <div class="tarea">
                 <p class="tarea-texto">Tarea 1: Estudiar para el examen de Limón</p>
