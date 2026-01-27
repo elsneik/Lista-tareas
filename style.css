@@ -201,6 +201,7 @@ background-color: var(--btn-remove-color-hover);
 }
 
 .tarea-completada{
+    text-decoration: line-through;
     background-color: var(--bg-task-complete);
 }
 
